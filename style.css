@@ -92,16 +92,22 @@ a:focus-visible, button:focus-visible, .chip:focus-visible{
   padding:14px 24px; max-width:var(--maxw); margin:0 auto;
 }
 .brand{
-  display:flex; align-items:center; gap:10px;
-  font-family:'IBM Plex Mono', monospace;
-  font-weight:600; font-size:1.05rem; color:var(--ink);
+  display:flex; flex-direction:column; align-items:flex-start; gap:1px;
   text-decoration:none;
 }
 .brand:hover{ text-decoration:none; }
-.brand .dot{
-  width:10px; height:10px; border-radius:50%;
-  background:var(--gold);
-  box-shadow:0 0 0 3px rgba(255,255,255,0.6);
+.brand-name{
+  font-family:'Fraunces', serif;
+  font-weight:700;
+  font-size:1.15rem;
+  color:var(--pink-deeper);
+  letter-spacing:0.01em;
+}
+.brand-tagline{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:0.7rem;
+  color:var(--ink-soft);
+  letter-spacing:0.03em;
 }
 .nav-links{
   display:flex; gap:6px; list-style:none; margin:0; padding:0;
@@ -156,7 +162,7 @@ a:focus-visible, button:focus-visible, .chip:focus-visible{
 .eyebrow{
   display:block;
   font-family:'Dancing Script', cursive;
-  font-size:2rem;
+  font-size:clamp(2rem, 4.5vw, 3.1rem);
   font-weight:700;
   text-transform:none;
   letter-spacing:0.01em;
@@ -205,13 +211,10 @@ a:focus-visible, button:focus-visible, .chip:focus-visible{
 .btn-outline:hover{ background:var(--pink-soft); color:var(--pink-deeper); }
 .btn-row{ display:flex; gap:12px; flex-wrap:wrap; margin-top:22px; }
 
-/* ---------- Circuit divider ---------- */
+/* ---------- Divider ---------- */
 .trace-divider{
-  width:100%; height:34px; margin:8px 0 24px;
-  background-repeat:repeat-x;
-  background-size:120px 34px;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='34' viewBox='0 0 120 34'%3E%3Cpath d='M0 17 H30 L40 7 H80 L90 27 H120' fill='none' stroke='%23f2c6dc' stroke-width='2'/%3E%3Ccircle cx='30' cy='17' r='3' fill='%23dba64c'/%3E%3Ccircle cx='90' cy='27' r='3' fill='%23d6478e'/%3E%3C/svg%3E");
-  opacity:0.9;
+  width:100%; height:0; margin:24px 0;
+  border-top:3px dotted var(--pink-primary);
 }
 
 /* ---------- Sections ---------- */
@@ -262,22 +265,11 @@ section{ padding:36px 0; }
 /* ---------- IC-chip style badge for course codes ---------- */
 .ic-badge{
   display:inline-block;
-  font-family:'IBM Plex Mono', monospace;
-  font-weight:600; font-size:0.85rem;
-  color:var(--ink);
-  background:linear-gradient(180deg,#fff,#fdeef5);
-  border:1.5px solid var(--pink-deeper);
-  border-radius:6px;
-  padding:6px 14px;
-  position:relative;
-  box-shadow:0 2px 0 rgba(181,45,112,0.15);
+  font-family:'Dancing Script', cursive;
+  font-weight:700; font-size:1.7rem;
+  color:var(--pink-deeper);
+  line-height:1;
 }
-.ic-badge::before, .ic-badge::after{
-  content:""; position:absolute; top:50%; transform:translateY(-50%);
-  width:8px; height:3px; background:var(--pink-deeper);
-}
-.ic-badge::before{ left:-8px; }
-.ic-badge::after{ right:-8px; }
 
 /* ---------- Project cards ---------- */
 .project{
