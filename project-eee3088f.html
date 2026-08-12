@@ -38,9 +38,9 @@
           <span class="ic-badge">EEE3088F</span>
           <h1 style="font-size:1.8rem;">Design Principles &mdash; Power Subsystem PCB</h1>
           
-          <p>Working in a group, we designed the full power subsystem for a mobile robot (the &ldquo;MM&rdquo;) in KiCad, with each member owning specific parts of the design for the individual design reports. My module needed to drive four motors bidirectionally &mdash; two brushed DC motors at up to 200&nbsp;mA and two auxiliary motors at up to 500&nbsp;mA each &mdash; while monitoring the battery over I&sup2;C with an INA219.</p>
-          <p>The board also charges a 1S1P battery from a 9V input across two selectable charge rates (&asymp;200&nbsp;mA and &asymp;600&nbsp;mA), takes 9V from a USB-C host input, switches two external 1&nbsp;A loads, and regulates clean 3.3V and 5V rails at 5% accuracy. A single ON/OFF switch had to cut standby draw below 30&nbsp;&micro;A while still delivering the robot's 2A peak current on demand.</p>
-        
+          <p>Working in a group, we designed the full power subsystem for a mobile robot (the &ldquo;MM&rdquo;) in KiCad &mdash; and this project was really where our KiCad skills went from &ldquo;can place a component&rdquo; to properly understanding what good PCB design demands. Trace widths mattered: the higher-current pathways needed noticeably wider copper to handle the load without overheating, which meant thinking in amps, not just connections.</p>
+          <p>My part of the board handled the motors, the ON/OFF switch, and the external load switching &mdash; driving four motors bidirectionally, cutting standby current below 30&nbsp;&micro;A when off, and still delivering the robot's full peak current on demand when on.</p>
+          <p>The hardest part wasn't the design itself, though &mdash; it was the debugging. You can design a PCB fully convinced it'll work first time, and then reality has other plans. This project taught me to design with backup plans built in from the start: modular sections, the ability to cut a trace and reroute it, and components placed so they could actually be swapped out when (not if) something didn't behave the way the datasheet promised.</p>
           <div class="project-tools">
             <span class="chip">KiCad</span>
             <span class="chip">Power electronics</span>
