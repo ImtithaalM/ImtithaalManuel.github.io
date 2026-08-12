@@ -6,15 +6,30 @@ in a baby-pink "circuit board" theme. No build tools needed — just upload and 
 ## File structure
 ```
 eportfolio/
-├── index.html        (About / homepage)
-├── cv.html            (CV page + download button)
-├── projects.html      (5 course projects)
-├── experience.html    (timeline of experience)
-├── style.css           (all styling — one file, shared by every page)
-├── images/             (all photos)
+├── index.html                 (Home)
+├── about.html                 (About Me — bio + hobbies/interests)
+├── cv.html                    (Resume/CV page + download button)
+├── projects.html              (Projects overview — card grid)
+├── project-eee2046f.html      (Project detail: Embedded Systems)
+├── project-eee3088f.html      (Project detail: Power Subsystem PCB)
+├── project-eee3094s.html      (Project detail: Control Engineering)
+├── project-eee3097s.html      (Project detail: Micromouse)
+├── project-eee4113f.html      (Project detail: Ocean Carbon Sensor)
+├── experience.html            (Timeline — most recent first)
+├── style.css                   (all styling — one file, shared by every page)
+├── images/                     (all photos — filenames are case-sensitive!)
 └── files/
-    └── Imtithaal_Manuel_CV.pdf   (downloadable CV)
+    ├── Imtithaal_Manuel_CV.pdf
+    ├── EEE3088F.pdf
+    ├── EE3094S.pdf
+    ├── EEE3097S.pdf
+    └── EEE4113F.pdf
 ```
+
+### Images this update needs
+Make sure these are uploaded into `images/` with these **exact lowercase names**:
+`me.jpg`, `pilates.jpg`, `matcha.jpg`, `beach.jpg`, `stones.jpg`, `history.jpg`, `eeelite.jpg`
+(if any of your files use a different extension like `.png`, just update the matching `src="images/...">` in the HTML to match).
 
 ## How to publish it with GitHub Pages (free, no domain needed)
 
