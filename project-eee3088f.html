@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EEE3088F — Imtithaal Manuel</title>
+<meta name="description" content="Design Principles &mdash; Power Subsystem PCB — a UCT engineering project by Imtithaal Manuel.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23f6aecd'/%3E%3Ccircle cx='50' cy='50' r='16' fill='%23d6478e'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="dot"></span>imti.manuel</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></label>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="cv.html">Resume/CV</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="experience.html">Experience</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section style="padding-top:40px;">
+    <div class="wrap">
+      <a class="detail-back" href="projects.html">&larr; Back to all projects</a>
+      <article class="project-detail">
+        <img src="images/pcb-design.jpg" alt="Two custom-designed power subsystem PCBs on a workbench">
+        <div class="project-detail-body">
+          <span class="ic-badge">EEE3088F</span>
+          <h1 style="font-size:1.8rem;">Design Principles &mdash; Power Subsystem PCB</h1>
+          
+          <p>Working in a group, we designed the full power subsystem for a mobile robot (the &ldquo;MM&rdquo;) in KiCad, with each member owning specific parts of the design for the individual design reports. My module needed to drive four motors bidirectionally &mdash; two brushed DC motors at up to 200&nbsp;mA and two auxiliary motors at up to 500&nbsp;mA each &mdash; while monitoring the battery over I&sup2;C with an INA219.</p>
+          <p>The board also charges a 1S1P battery from a 9V input across two selectable charge rates (&asymp;200&nbsp;mA and &asymp;600&nbsp;mA), takes 9V from a USB-C host input, switches two external 1&nbsp;A loads, and regulates clean 3.3V and 5V rails at 5% accuracy. A single ON/OFF switch had to cut standby draw below 30&nbsp;&micro;A while still delivering the robot's 2A peak current on demand.</p>
+        
+          <div class="project-tools">
+            <span class="chip">KiCad</span>
+            <span class="chip">Power electronics</span>
+            <span class="chip">I&sup2;C &mdash; INA219</span>
+            <span class="chip">Battery charging</span>
+            
+          </div>
+          <div class="report-slot">&#128206; <a href="files/EEE3088F.pdf" download>Download the full project report (PDF)</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>Imtithaal Manuel &middot; Cape Town, South Africa &middot; imtithaalm.05@gmail.com</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="cv.html">Resume/CV</a>
+      <a href="about.html">About Me</a>
+      <a href="experience.html">Experience</a>
+      <a href="https://www.linkedin.com/in/imtithaal-m-58539129a" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

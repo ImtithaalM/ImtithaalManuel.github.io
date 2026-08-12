@@ -4,8 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects — Imtithaal Manuel</title>
+<meta name="description" content="Five UCT engineering course projects, from embedded systems to a Southern Ocean carbon sensor.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23f6aecd'/%3E%3Ccircle cx='50' cy='50' r='16' fill='%23d6478e'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -16,123 +18,92 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></label>
     <ul class="nav-links">
-      <li><a href="index.html">About</a></li>
-      <li><a href="cv.html">CV</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="cv.html">Resume/CV</a></li>
+      <li><a href="about.html">About Me</a></li>
       <li><a href="experience.html">Experience</a></li>
     </ul>
   </nav>
 </header>
 
 <main id="main">
+
   <section class="hero" style="padding-bottom:0;">
     <div class="wrap">
       <span class="eyebrow">Projects</span>
       <h1>Five courses, five builds</h1>
-      <p class="lede">From my very first soldered board in second year to a full group system in fourth year, here's a running log of what I've designed, coded and debugged along the way.</p>
+      <p class="lede">From my very first soldered board in second year to a full group system in fourth year &mdash; tap a project to read the full story.</p>
     </div>
   </section>
 
   <section>
     <div class="wrap">
+      <div class="project-grid">
 
-      <!-- Project 1 -->
-      <article class="project">
+      <a class="project-card" href="project-eee2046f.html">
         <img src="images/embedded-stm-board.jpg" alt="STM32F0 development board with LCD screen and LEDs, assembled by hand">
-        <div class="project-body">
+        <div class="project-card-body">
           <span class="ic-badge">EEE2046F</span>
-          <h3>Embedded Systems — STM32F0 Dev Board</h3>
-          <p>My introduction to embedded systems: I assembled a UCT STM32F0 development board by hand, then wrote the firmware to bring it to life. The board waits with all LEDs off until a start button (SW0) is pressed, then cycles through three display routines — a defined LED pattern sequence, an 8-step scrolling display, and an 8-bit binary counter that increments and wraps back to zero.</p>
-          <p>Three push buttons (SW1–SW3) select between the display modes, with a <span class="mono">checkPB()</span> routine handling debouncing and flag updates, and a central <span class="mono">display()</span> function dispatching to the correct routine — including switching cleanly between modes mid-run.</p>
-          <div class="project-tools">
-            <span class="chip">Embedded C</span>
-            <span class="chip">Hand soldering</span>
-            <span class="chip">GPIO / interrupts</span>
-          </div>
+          <h3>Embedded Systems &mdash; STM32F0 Dev Board</h3>
+          <p>Hand-assembling and coding a UCT STM32F0 dev board &mdash; LED sequences, scrolling patterns and a binary counter.</p>
+          <span class="read-more">Read more &rarr;</span>
         </div>
-      </article>
+      </a>
 
-      <!-- Project 2 -->
-      <article class="project reverse">
+      <a class="project-card" href="project-eee3088f.html">
         <img src="images/pcb-design.jpg" alt="Two custom-designed power subsystem PCBs on a workbench">
-        <div class="project-body">
+        <div class="project-card-body">
           <span class="ic-badge">EEE3088F</span>
-          <h3>Design Principles — Power Subsystem PCB</h3>
-          <p>Working in a group, we designed the full power subsystem for a mobile robot (the "MM") in KiCad, with each member owning specific parts of the design for the individual design reports. My module needed to drive four motors bidirectionally — two brushed DC motors at up to 200 mA and two auxiliary motors at up to 500 mA each — while monitoring the battery over I²C with an INA219.</p>
-          <p>The board also charges a 1S1P battery from a 9V input across two selectable charge rates (≈200 mA and ≈600 mA), takes 9V from a USB-C host input, switches two external 1 A loads, and regulates clean 3.3V and 5V rails at 5% accuracy. A single ON/OFF switch had to cut standby draw below 30 µA while still delivering the robot's 2A peak current on demand.</p>
-          <div class="project-tools">
-            <span class="chip">KiCad</span>
-            <span class="chip">Power electronics</span>
-            <span class="chip">I²C — INA219</span>
-            <span class="chip">Battery charging</span>
-          </div>
-          <div class="report-slot">📎 <a href="files/EEE3088F.pdf" download>Download the full project report (PDF)</a></div>
+          <h3>Design Principles &mdash; Power Subsystem PCB</h3>
+          <p>Designing a KiCad power subsystem PCB for a mobile robot &mdash; motor drive, battery charging and regulated rails.</p>
+          <span class="read-more">Read more &rarr;</span>
         </div>
-      </article>
+      </a>
 
-      <!-- Project 3 -->
-      <article class="project">
+      <a class="project-card" href="project-eee3094s.html">
         <img src="images/controller.jpg" alt="A hand-built analogue lead compensator controller circuit on breadboard-style perfboard">
-        <div class="project-body">
+        <div class="project-card-body">
           <span class="ic-badge">EEE3094S</span>
-          <h3>Control Engineering — The Kitticopter</h3>
-          <p>Yes, really — this lab is themed around <em>Orvillecopter</em>, and the brief is to design a controller that helps a (virtual, thankfully) flying feline track a position input. I started by designing a proportional controller, then evolved it into a lead compensator to meet a tighter set of specifications: steady-state error under 8%, overshoot under 30%, and robustness to ±10% uncertainty in both the system's aerodynamic constant and the physical components used to build the controller — all within a 10V supply limit.</p>
-          <p>The build shown here is the physical lead compensator circuit, translating the theoretical design into real analogue hardware.</p>
-          <div class="project-tools">
-            <span class="chip">Control systems</span>
-            <span class="chip">Lead compensation</span>
-            <span class="chip">Analogue circuit design</span>
-          </div>
-          <div class="report-slot">📎 <a href="files/EE3094S.pdf" download>Download the full project report (PDF)</a></div>
+          <h3>Control Engineering &mdash; The Kitticopter</h3>
+          <p>Designing a proportional controller, then a lead compensator, to help a virtual flying cat track a position input.</p>
+          <span class="read-more">Read more &rarr;</span>
         </div>
-      </article>
+      </a>
 
-      <!-- Project 4 -->
-      <article class="project reverse">
+      <a class="project-card" href="project-eee3097s.html">
         <img src="images/micromouse-design.jpg" alt="A small four-wheeled micromouse robot sitting inside a wooden maze">
-        <div class="project-body">
-          <span class="ic-badge">EEE3098S</span>
-          <h3>Engineering Design — Micromouse</h3>
-          <p>A milestone-based robotics build. After assembling the micromouse hardware, Milestone 1 was to design, implement and test a system to move the mouse a specified straight-line distance (2 m) — actuating the motors and using sensor feedback to estimate and correct actual movement — verified in both simulation and a physical hardware demo.</p>
-          <p>Milestone 2 moved into full maze exploration in simulation: defining requirements, modelling every subsystem, and implementing the logic and control strategy needed for the mouse to completely explore an unknown maze. This project was heavy on MATLAB Simulink and Stateflow work for both the control logic and the simulated environment.</p>
-          <div class="project-tools">
-            <span class="chip">MATLAB / Simulink</span>
-            <span class="chip">Stateflow</span>
-            <span class="chip">Sensor feedback control</span>
-            <span class="chip">Maze-solving logic</span>
-          </div>
-          <div class="report-slot">📎 <a href="files/EEE3097S.pdf" download>Download the full project report (PDF)</a></div>
+        <div class="project-card-body">
+          <span class="ic-badge">EEE3097S</span>
+          <h3>Engineering Design &mdash; Micromouse</h3>
+          <p>Building a micromouse robot that drives a set distance, then autonomously explores a full maze in simulation.</p>
+          <span class="read-more">Read more &rarr;</span>
         </div>
-      </article>
+      </a>
 
-      <!-- Project 5 -->
-      <article class="project">
+      <a class="project-card" href="project-eee4113f.html">
         <img src="images/power-subsystem-design.jpg" alt="A pink-and-blue power subsystem circuit built on two perfboards with buck and boost converters">
-        <div class="project-body">
+        <div class="project-card-body">
           <span class="ic-badge">EEE4113F</span>
-          <h3>Engineering System Design — Southern Ocean Carbon Sensor</h3>
-          <p>2026's theme was polar exploration through engineering design. My team of four worked with Dr Sandy Thomalla from UCT's Oceanography department, who needed a device to collect high-resolution, long-term carbon flux data in the Southern Ocean for environmental and oceanographic modelling — built to a R2000 budget and a 12-week timeline, with locally sourced parts.</p>
-          <p>The system split into four black-box subsystems: sensing (light-signal transmission and reception as a proxy for particulate organic carbon), mechanical (housing, wiper mechanism, motorised shutter), control &amp; post-processing (switching, temperature sensing, data logging), and <strong>power — my subsystem</strong>. I designed for a 3S1P 12.6V rechargeable battery with per-cell monitoring, regulated 3.3V, 5V, +12V and −12V rails at 5% accuracy across defined load ranges, and a MOSFET-based switch drawing under 20 µA when off while handling 1.5A peak when on — all fit onto a 65×65 mm veroboard for under R500.</p>
-          <div class="project-tools">
-            <span class="chip">Multi-rail power design</span>
-            <span class="chip">Battery monitoring</span>
-            <span class="chip">Low-power switching</span>
-            <span class="chip">Group systems engineering</span>
-          </div>
-          <div class="report-slot">📎 <a href="files/EEE4113F.pdf" download>Download the full project report (PDF)</a></div>
+          <h3>Engineering System Design &mdash; Southern Ocean Carbon Sensor</h3>
+          <p>Leading the power subsystem for a group-built autonomous sediment trap, designed for a UCT Oceanography researcher.</p>
+          <span class="read-more">Read more &rarr;</span>
         </div>
-      </article>
-
+      </a>
+      </div>
     </div>
   </section>
+
 </main>
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <p>Imtithaal Manuel · Cape Town, South Africa · imtithaalm.05@gmail.com</p>
+    <p>Imtithaal Manuel &middot; Cape Town, South Africa &middot; imtithaalm.05@gmail.com</p>
     <div class="footer-links">
-      <a href="index.html">About</a>
-      <a href="cv.html">CV</a>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="cv.html">Resume/CV</a>
+      <a href="about.html">About Me</a>
       <a href="experience.html">Experience</a>
       <a href="https://www.linkedin.com/in/imtithaal-m-58539129a" target="_blank" rel="noopener">LinkedIn</a>
     </div>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EEE4113F — Imtithaal Manuel</title>
+<meta name="description" content="Engineering System Design &mdash; Southern Ocean Carbon Sensor — a UCT engineering project by Imtithaal Manuel.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23f6aecd'/%3E%3Ccircle cx='50' cy='50' r='16' fill='%23d6478e'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="dot"></span>imti.manuel</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></label>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="cv.html">Resume/CV</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="experience.html">Experience</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section style="padding-top:40px;">
+    <div class="wrap">
+      <a class="detail-back" href="projects.html">&larr; Back to all projects</a>
+      <article class="project-detail">
+        <img src="images/power-subsystem-design.jpg" alt="A pink-and-blue power subsystem circuit built on two perfboards with buck and boost converters">
+        <div class="project-detail-body">
+          <span class="ic-badge">EEE4113F</span>
+          <h1 style="font-size:1.8rem;">Engineering System Design &mdash; Southern Ocean Carbon Sensor</h1>
+          
+          <p>2026's theme was polar exploration through engineering design. My team of four worked with Dr Sandy Thomalla from UCT's Oceanography department, who needed a device to collect high-resolution, long-term carbon flux data in the Southern Ocean for environmental and oceanographic modelling &mdash; built to a R2000 budget and a 12-week timeline, with locally sourced parts.</p>
+          <p>The system split into four black-box subsystems: sensing (light-signal transmission and reception as a proxy for particulate organic carbon), mechanical (housing, wiper mechanism, motorised shutter), control &amp; post-processing (switching, temperature sensing, data logging), and <strong>power &mdash; my subsystem</strong>. I designed for a 3S1P 12.6V rechargeable battery with per-cell monitoring, regulated 3.3V, 5V, +12V and &minus;12V rails at 5% accuracy across defined load ranges, and a MOSFET-based switch drawing under 20&nbsp;&micro;A when off while handling 1.5A peak when on &mdash; all fit onto a 65&times;65&nbsp;mm veroboard for under R500.</p>
+        
+          <div class="project-tools">
+            <span class="chip">Multi-rail power design</span>
+            <span class="chip">Battery monitoring</span>
+            <span class="chip">Low-power switching</span>
+            <span class="chip">Group systems engineering</span>
+            
+          </div>
+          <div class="report-slot">&#128206; <a href="files/EEE4113F.pdf" download>Download the full project report (PDF)</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>Imtithaal Manuel &middot; Cape Town, South Africa &middot; imtithaalm.05@gmail.com</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="cv.html">Resume/CV</a>
+      <a href="about.html">About Me</a>
+      <a href="experience.html">Experience</a>
+      <a href="https://www.linkedin.com/in/imtithaal-m-58539129a" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
