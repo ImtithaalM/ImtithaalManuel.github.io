@@ -3,70 +3,347 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EEE2046F — Imtithaal Manuel</title>
-<meta name="description" content="Embedded Systems &mdash; STM32F0 Dev Board — a UCT engineering project by Imtithaal Manuel.">
+
+<title>EEE2046F — Embedded Systems — Imtithaal Manuel</title>
+
+<meta name="description" content="Embedded Systems — STM32F0 Dev Board — a UCT engineering project by Imtithaal Manuel.">
+
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23f6aecd'/%3E%3Ccircle cx='50' cy='50' r='16' fill='%23d6478e'/%3E%3C/svg%3E">
+
 <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
+
 <a class="skip-link" href="#main">Skip to content</a>
 
+
+<!-- ================= HEADER ================= -->
+
 <header class="site-header">
+
   <nav class="nav">
-    <a href="index.html" class="brand"><span class="brand-name">Imtithaal Manuel</span><span class="brand-tagline">My professional portfolio</span></a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></label>
+
+    <a href="index.html" class="brand">
+
+      <span class="brand-name">
+        Imtithaal Manuel
+      </span>
+
+      <span class="brand-tagline">
+        My professional portfolio
+      </span>
+
+    </a>
+
+
+    <input
+      type="checkbox"
+      id="nav-toggle"
+      class="nav-toggle"
+    >
+
+    <label
+      for="nav-toggle"
+      class="hamburger"
+      aria-label="Toggle navigation"
+    >
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </label>
+
+
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html" class="active">Projects</a></li>
-      <li><a href="cv.html">Resume/CV</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="experience.html">Experience</a></li>
+
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="projects.html" class="active">
+          Projects
+        </a>
+      </li>
+
+      <li>
+        <a href="cv.html">
+          Resume/CV
+        </a>
+      </li>
+
+      <li>
+        <a href="about.html">
+          About Me
+        </a>
+      </li>
+
+      <li>
+        <a href="experience.html">
+          Experience
+        </a>
+      </li>
+
     </ul>
+
   </nav>
+
 </header>
+
+
+<!-- ================= MAIN CONTENT ================= -->
 
 <main id="main">
 
   <section style="padding-top:40px;">
+
     <div class="wrap">
-      <a class="detail-back" href="projects.html">&larr; Back to all projects</a>
+
+      <!-- BACK BUTTON -->
+
+      <a
+        class="detail-back"
+        href="projects.html"
+      >
+        &larr; Back to all projects
+      </a>
+
+
       <article class="project-detail">
-        <img src="images/embedded-stm-board.jpg" alt="STM32F0 development board with LCD screen and LEDs, assembled by hand">
+
+
+        <!-- ================= PROJECT IMAGE ================= -->
+
+        <img
+          src="images/embedded-stm-board.jpg"
+          alt="STM32F0 development board with LCD screen and LEDs, assembled by hand"
+        >
+
+
         <div class="project-detail-body">
-          <span class="ic-badge">EEE2046F</span>
-          <h1 style="font-size:1.8rem;">Embedded Systems &mdash; STM32F0 Dev Board</h1>
-          
-          <p>This was my real introduction to embedded systems &mdash; and honestly, to programming in C properly for the first time. I assembled a UCT STM32F0 development board by hand, then spent most of the project relearning logic from the ground up: how logic gates translate into real conditions in code, how to structure a program around states and flags, and how a microcontroller actually "thinks" one instruction at a time.</p>
-          <p>From there it became about creating patterns with the onboard LEDs &mdash; a defined sequence, an 8-step scroll, and an 8-bit binary counter that wraps back to zero &mdash; and learning why buttons need debouncing before you can trust their input. Getting text to write cleanly to the LCD screen felt like a small milestone at the time, but it was really the moment this project cracked open a much bigger door: realising just how much a tiny microcontroller is actually capable of.</p>
+
+
+          <!-- MODULE BADGE -->
+
+          <span class="ic-badge">
+            EEE2046F
+          </span>
+
+
+          <!-- PROJECT TITLE -->
+
+          <h1 style="font-size:1.8rem;">
+            Embedded Systems &mdash; STM32F0 Dev Board
+          </h1>
+
+
+          <!-- ================= INTRODUCTION ================= -->
+
+          <p>
+            A hands-on embedded systems project where I assembled a
+            STM32F0 development board and programmed it in C to control
+            LEDs, buttons and an LCD display.
+          </p>
+
+
+          <!-- ================= PROJECT OVERVIEW ================= -->
+
+          <h2>
+            What was the project?
+          </h2>
+
+          <p>
+            This project was my introduction to embedded systems and gave
+            me practical experience working with a microcontroller at
+            hardware level. I assembled a UCT STM32F0 development board
+            by hand before developing and testing programs on the board.
+          </p>
+
+          <p>
+            The project involved learning how digital logic translates
+            into software, as well as how a microcontroller can respond
+            to inputs and control different hardware components.
+          </p>
+
+
+          <!-- ================= MY WORK ================= -->
+
+          <h2>
+            What I worked on
+          </h2>
+
+          <p>
+            I programmed the STM32F0 in Embedded C to create a range of
+            LED patterns and behaviours. These included a defined LED
+            sequence, an 8-step scrolling pattern and an 8-bit binary
+            counter that wrapped back to zero.
+          </p>
+
+          <p>
+            I also worked with button inputs and learned why switch
+            debouncing is necessary when reading physical inputs.
+            Another part of the project involved configuring the LCD
+            and displaying text clearly on the screen.
+          </p>
+
+
+          <!-- ================= ENGINEERING DECISIONS ================= -->
+
+          <h2>
+            Engineering decisions
+          </h2>
+
+          <p>
+            Working directly with the microcontroller required careful
+            consideration of how hardware inputs and outputs were
+            represented in software. I had to structure the program
+            around different states, flags and timing behaviour while
+            ensuring that the physical hardware responded as intended.
+          </p>
+
+          <p>
+            Hand-assembling the development board also meant checking
+            connections and solder joints carefully before testing the
+            software. This helped me understand the relationship between
+            the physical circuit and the code controlling it.
+          </p>
+
+
+          <!-- ================= SKILLS ================= -->
+
+          <h2>
+            Skills demonstrated
+          </h2>
+
           <div class="project-tools">
-            <span class="chip">Embedded C</span>
-            <span class="chip">Hand soldering</span>
-            <span class="chip">GPIO / interrupts</span>
-            
+
+            <span class="chip">
+              Embedded C
+            </span>
+
+            <span class="chip">
+              STM32F0
+            </span>
+
+            <span class="chip">
+              Microcontrollers
+            </span>
+
+            <span class="chip">
+              GPIO
+            </span>
+
+            <span class="chip">
+              Interrupts
+            </span>
+
+            <span class="chip">
+              LCD Programming
+            </span>
+
+            <span class="chip">
+              Hand Soldering
+            </span>
+
+            <span class="chip">
+              Debugging
+            </span>
+
           </div>
-          
+
+
+          <!-- ================= PROJECT TAKEAWAY ================= -->
+
+          <div
+            class="card"
+            style="margin-top:30px;"
+          >
+
+            <h2>
+              What I took from the project
+            </h2>
+
+            <p>
+              This project strengthened my understanding of how software
+              and hardware work together. It gave me practical experience
+              programming in C for a physical system rather than simply
+              writing code that runs on a computer.
+            </p>
+
+            <p>
+              Seeing an LED pattern or LCD message appear as a direct
+              result of my code made the connection between programming,
+              electronics and real-world systems much more tangible.
+            </p>
+
+          </div>
+
+
         </div>
+
       </article>
+
     </div>
+
   </section>
 
 </main>
 
+
+<!-- ================= FOOTER ================= -->
+
 <footer class="site-footer">
+
   <div class="wrap footer-inner">
-    <p>Imtithaal Manuel &middot; Cape Town, South Africa &middot; imtithaalm.05@gmail.com</p>
+
+    <p>
+      Imtithaal Manuel &middot;
+      Cape Town, South Africa &middot;
+      imtithaalm.05@gmail.com
+    </p>
+
+
     <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="cv.html">Resume/CV</a>
-      <a href="about.html">About Me</a>
-      <a href="experience.html">Experience</a>
-      <a href="https://www.linkedin.com/in/imtithaal-m-58539129a" target="_blank" rel="noopener">LinkedIn</a>
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="projects.html">
+        Projects
+      </a>
+
+      <a href="cv.html">
+        Resume/CV
+      </a>
+
+      <a href="about.html">
+        About Me
+      </a>
+
+      <a href="experience.html">
+        Experience
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/imtithaal-m-58539129a"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn
+      </a>
+
     </div>
+
   </div>
+
 </footer>
+
 
 </body>
 </html>

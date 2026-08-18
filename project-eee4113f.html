@@ -3,72 +3,425 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EEE4113F — Imtithaal Manuel</title>
-<meta name="description" content="Engineering System Design &mdash; Optical Sediment Trap — a UCT engineering project by Imtithaal Manuel.">
+
+<title>EEE4113F — Engineering System Design — Imtithaal Manuel</title>
+
+<meta name="description" content="Engineering System Design — Southern Ocean Carbon Sensor — a UCT engineering project by Imtithaal Manuel.">
+
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23f6aecd'/%3E%3Ccircle cx='50' cy='50' r='16' fill='%23d6478e'/%3E%3C/svg%3E">
+
 <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
+
 <a class="skip-link" href="#main">Skip to content</a>
 
+
+<!-- ================= HEADER ================= -->
+
 <header class="site-header">
+
   <nav class="nav">
-    <a href="index.html" class="brand"><span class="brand-name">Imtithaal Manuel</span><span class="brand-tagline">My professional portfolio</span></a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></label>
+
+    <a href="index.html" class="brand">
+
+      <span class="brand-name">
+        Imtithaal Manuel
+      </span>
+
+      <span class="brand-tagline">
+        My professional portfolio
+      </span>
+
+    </a>
+
+
+    <input
+      type="checkbox"
+      id="nav-toggle"
+      class="nav-toggle"
+    >
+
+    <label
+      for="nav-toggle"
+      class="hamburger"
+      aria-label="Toggle navigation"
+    >
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </label>
+
+
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html" class="active">Projects</a></li>
-      <li><a href="cv.html">Resume/CV</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="experience.html">Experience</a></li>
+
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="projects.html" class="active">
+          Projects
+        </a>
+      </li>
+
+      <li>
+        <a href="cv.html">
+          Resume/CV
+        </a>
+      </li>
+
+      <li>
+        <a href="about.html">
+          About Me
+        </a>
+      </li>
+
+      <li>
+        <a href="experience.html">
+          Experience
+        </a>
+      </li>
+
     </ul>
+
   </nav>
+
 </header>
+
+
+<!-- ================= MAIN CONTENT ================= -->
 
 <main id="main">
 
   <section style="padding-top:40px;">
+
     <div class="wrap">
-      <a class="detail-back" href="projects.html">&larr; Back to all projects</a>
+
+
+      <!-- BACK BUTTON -->
+
+      <a
+        class="detail-back"
+        href="projects.html"
+      >
+        &larr; Back to all projects
+      </a>
+
+
       <article class="project-detail">
-        <img src="images/power-subsystem-design.jpg" alt="A pink-and-blue power subsystem circuit built on two perfboards with buck and boost converters">
+
+
+        <!-- ================= PROJECT IMAGE ================= -->
+
+        <img
+          src="images/power-subsystem-design.jpg"
+          alt="A pink-and-blue power subsystem circuit built on two perfboards with buck and boost converters"
+        >
+
+
         <div class="project-detail-body">
-          <span class="ic-badge">EEE4113F</span>
-          <h1 style="font-size:1.8rem;">Engineering System Design &mdash; Southern Ocean Carbon Sensor</h1>
-          
-          <p>2026's theme was polar exploration through engineering design. My team of four worked with Dr Sandy Thomalla from UCT's Oceanography department, who needed a device to collect high-resolution, long-term carbon flux data in the Southern Ocean for environmental and oceanographic modelling &mdash; built to a R2000 budget and a 12-week timeline, with locally sourced parts.</p>
-          <p>The system split into four black-box subsystems: sensing (light-signal transmission and reception as a proxy for particulate organic carbon), mechanical (housing, wiper mechanism, motorised shutter), control &amp; post-processing (switching, temperature sensing, data logging), and <strong>power &mdash; my subsystem</strong>. I designed for a 3S1P 12.6V rechargeable battery with per-cell monitoring, regulated 3.3V, 5V, +12V and &minus;12V rails at 5% accuracy across defined load ranges, and a MOSFET-based switch drawing under 20&nbsp;&micro;A when off while handling 1.5A peak when on &mdash; all fit onto a 65&times;65&nbsp;mm veroboard for under R500.</p>
-        
+
+
+          <!-- MODULE BADGE -->
+
+          <span class="ic-badge">
+            EEE4113F
+          </span>
+
+
+          <!-- PROJECT TITLE -->
+
+          <h1 style="font-size:1.8rem;">
+            Engineering System Design &mdash; Southern Ocean Carbon Sensor
+          </h1>
+
+
+          <!-- ================= INTRODUCTION ================= -->
+
+          <p>
+            A multidisciplinary engineering design project focused on
+            developing a low-cost carbon flux sensor for long-term
+            environmental monitoring in the Southern Ocean.
+          </p>
+
+
+          <!-- ================= PROJECT OVERVIEW ================= -->
+
+          <h2>
+            What was the project?
+          </h2>
+
+          <p>
+            The 2026 engineering design challenge focused on polar
+            exploration and environmental monitoring. Working in a team
+            of four, we collaborated with Dr Sandy Thomalla from UCT's
+            Oceanography department to develop a device capable of
+            collecting high-resolution, long-term carbon flux data in
+            the Southern Ocean.
+          </p>
+
+          <p>
+            The project had to be completed within a R2000 budget and a
+            12-week development period, while prioritising locally
+            sourced components. These constraints meant that the system
+            had to be carefully designed around cost, power consumption,
+            physical size and reliability.
+          </p>
+
+
+          <!-- ================= SYSTEM ARCHITECTURE ================= -->
+
+          <h2>
+            System design
+          </h2>
+
+          <p>
+            The overall system was divided into four black-box
+            subsystems: sensing, mechanical, control and post-processing,
+            and power. Each subsystem had its own requirements while
+            needing to integrate with the rest of the system.
+          </p>
+
+          <p>
+            The sensing subsystem used light transmission and reception
+            to estimate particulate organic carbon. The mechanical
+            subsystem incorporated the housing, wiper mechanism and
+            motorised shutter, while the control and post-processing
+            subsystem handled switching, temperature sensing and data
+            logging.
+          </p>
+
+
+          <!-- ================= MY CONTRIBUTION ================= -->
+
+          <h2>
+            My contribution &mdash; Power Subsystem
+          </h2>
+
+          <p>
+            I was responsible for designing the power subsystem. The
+            design was based around a 3S1P rechargeable battery capable
+            of supplying a maximum voltage of 12.6V, with monitoring
+            required for the individual battery cells.
+          </p>
+
+          <p>
+            I designed the power architecture to provide regulated
+            3.3V, 5V, +12V and &minus;12V rails. Each rail had to remain
+            within 5% of its required voltage across the specified
+            operating load ranges.
+          </p>
+
+          <p>
+            I also designed a MOSFET-based power switch with a standby
+            current below 20&nbsp;&micro;A when off while still being able
+            to handle a peak current of 1.5A when switched on.
+          </p>
+
+
+          <!-- ================= DESIGN CONSTRAINTS ================= -->
+
+          <h2>
+            Design constraints
+          </h2>
+
+          <p>
+            One of the biggest challenges was fitting the complete power
+            subsystem onto a 65&times;65&nbsp;mm veroboard while keeping the
+            design below the R500 budget allocated to the subsystem.
+          </p>
+
+          <p>
+            This required careful component selection, power budgeting
+            and consideration of the physical layout. The design had to
+            provide multiple regulated voltage rails while remaining
+            compact enough to integrate with the other subsystems.
+          </p>
+
+
+          <!-- ================= ENGINEERING DECISIONS ================= -->
+
+          <h2>
+            Engineering decisions
+          </h2>
+
+          <p>
+            The design required balancing several competing requirements:
+            voltage regulation, current capability, efficiency, physical
+            size, cost and low standby power consumption.
+          </p>
+
+          <p>
+            Rather than treating the power supply as an isolated circuit,
+            I had to consider how the different voltage rails would
+            interact with the requirements of the sensing, mechanical and
+            control subsystems. This helped me understand the importance
+            of power architecture at system level.
+          </p>
+
+
+          <!-- ================= SKILLS ================= -->
+
+          <h2>
+            Skills demonstrated
+          </h2>
+
           <div class="project-tools">
-            <span class="chip">Multi-rail power design</span>
-            <span class="chip">Battery monitoring</span>
-            <span class="chip">Low-power switching</span>
-            <span class="chip">Group systems engineering</span>
-            
+
+            <span class="chip">
+              Multi-Rail Power Design
+            </span>
+
+            <span class="chip">
+              Battery Monitoring
+            </span>
+
+            <span class="chip">
+              Power Electronics
+            </span>
+
+            <span class="chip">
+              Low-Power Switching
+            </span>
+
+            <span class="chip">
+              Voltage Regulation
+            </span>
+
+            <span class="chip">
+              Power Budgeting
+            </span>
+
+            <span class="chip">
+              System Integration
+            </span>
+
+            <span class="chip">
+              Group Systems Engineering
+            </span>
+
           </div>
-          <div class="report-slot">&#128206; <a href="files/EEE4113F.pdf" download>Download the full project report (PDF)</a></div>
+
+
+          <!-- ================= PROJECT EVIDENCE ================= -->
+
+          <div
+            class="card"
+            style="margin-top:30px;"
+          >
+
+            <h2>
+              Project evidence
+            </h2>
+
+            <p>
+              The full project report documents the system requirements,
+              subsystem designs, engineering decisions, implementation
+              and testing carried out throughout the project.
+            </p>
+
+            <a
+              class="btn"
+              href="files/EEE4113F.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              View Project Report &rarr;
+            </a>
+
+          </div>
+
+
+          <!-- ================= REFLECTION ================= -->
+
+          <h2 style="margin-top:30px;">
+            What I took from the project
+          </h2>
+
+          <p>
+            This project showed me what engineering looks like when a
+            design has to work within real constraints. The system had
+            to be affordable, compact, power-efficient and capable of
+            operating as part of a larger environmental monitoring
+            platform.
+          </p>
+
+          <p>
+            It also strengthened my ability to think at both subsystem
+            and system level. Designing the power subsystem meant
+            understanding not only my own circuit, but also how the
+            requirements of the other subsystems affected the overall
+            engineering solution.
+          </p>
+
+
         </div>
+
       </article>
+
     </div>
+
   </section>
 
 </main>
 
+
+<!-- ================= FOOTER ================= -->
+
 <footer class="site-footer">
+
   <div class="wrap footer-inner">
-    <p>Imtithaal Manuel &middot; Cape Town, South Africa &middot; imtithaalm.05@gmail.com</p>
+
+    <p>
+      Imtithaal Manuel &middot;
+      Cape Town, South Africa &middot;
+      imtithaalm.05@gmail.com
+    </p>
+
+
     <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="cv.html">Resume/CV</a>
-      <a href="about.html">About Me</a>
-      <a href="experience.html">Experience</a>
-      <a href="https://www.linkedin.com/in/imtithaal-m-58539129a" target="_blank" rel="noopener">LinkedIn</a>
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="projects.html">
+        Projects
+      </a>
+
+      <a href="cv.html">
+        Resume/CV
+      </a>
+
+      <a href="about.html">
+        About Me
+      </a>
+
+      <a href="experience.html">
+        Experience
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/imtithaal-m-58539129a"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn
+      </a>
+
     </div>
+
   </div>
+
 </footer>
+
 
 </body>
 </html>

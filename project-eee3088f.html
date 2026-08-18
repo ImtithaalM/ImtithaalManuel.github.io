@@ -3,72 +3,395 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EEE3088F — Imtithaal Manuel</title>
-<meta name="description" content="Design Principles &mdash; Power Subsystem PCB — a UCT engineering project by Imtithaal Manuel.">
+
+<title>EEE3088F — Power Subsystem PCB — Imtithaal Manuel</title>
+
+<meta name="description" content="Design Principles — Power Subsystem PCB — a UCT engineering project by Imtithaal Manuel.">
+
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23f6aecd'/%3E%3Ccircle cx='50' cy='50' r='16' fill='%23d6478e'/%3E%3C/svg%3E">
+
 <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
+
 <a class="skip-link" href="#main">Skip to content</a>
 
+
+<!-- ================= HEADER ================= -->
+
 <header class="site-header">
+
   <nav class="nav">
-    <a href="index.html" class="brand"><span class="brand-name">Imtithaal Manuel</span><span class="brand-tagline">My professional portfolio</span></a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></label>
+
+    <a href="index.html" class="brand">
+
+      <span class="brand-name">
+        Imtithaal Manuel
+      </span>
+
+      <span class="brand-tagline">
+        My professional portfolio
+      </span>
+
+    </a>
+
+
+    <input
+      type="checkbox"
+      id="nav-toggle"
+      class="nav-toggle"
+    >
+
+    <label
+      for="nav-toggle"
+      class="hamburger"
+      aria-label="Toggle navigation"
+    >
+
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html" class="active">Projects</a></li>
-      <li><a href="cv.html">Resume/CV</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="experience.html">Experience</a></li>
+
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="projects.html" class="active">
+          Projects
+        </a>
+      </li>
+
+      <li>
+        <a href="cv.html">
+          Resume/CV
+        </a>
+      </li>
+
+      <li>
+        <a href="about.html">
+          About Me
+        </a>
+      </li>
+
+      <li>
+        <a href="experience.html">
+          Experience
+        </a>
+      </li>
+
     </ul>
+
   </nav>
+
 </header>
+
+
+<!-- ================= MAIN CONTENT ================= -->
 
 <main id="main">
 
   <section style="padding-top:40px;">
+
     <div class="wrap">
-      <a class="detail-back" href="projects.html">&larr; Back to all projects</a>
+
+
+      <!-- BACK BUTTON -->
+
+      <a
+        class="detail-back"
+        href="projects.html"
+      >
+        &larr; Back to all projects
+      </a>
+
+
       <article class="project-detail">
-        <img src="images/pcb-design.jpg" alt="Two custom-designed power subsystem PCBs on a workbench">
+
+
+        <!-- ================= PROJECT IMAGE ================= -->
+
+        <img
+          src="images/pcb-design.jpg"
+          alt="Two custom-designed power subsystem PCBs on a workbench"
+        >
+
+
         <div class="project-detail-body">
-          <span class="ic-badge">EEE3088F</span>
-          <h1 style="font-size:1.8rem;">Design Principles &mdash; Power Subsystem PCB</h1>
-          
-          <p>Working in a group, we designed the full power subsystem for a mobile robot (the &ldquo;MM&rdquo;) in KiCad &mdash; and this project was really where our KiCad skills went from &ldquo;can place a component&rdquo; to properly understanding what good PCB design demands. Trace widths mattered: the higher-current pathways needed noticeably wider copper to handle the load without overheating, which meant thinking in amps, not just connections.</p>
-          <p>My part of the board handled the motors, the ON/OFF switch, and the external load switching &mdash; driving four motors bidirectionally, cutting standby current below 30&nbsp;&micro;A when off, and still delivering the robot's full peak current on demand when on.</p>
-          <p>The hardest part wasn't the design itself, though &mdash; it was the debugging. You can design a PCB fully convinced it'll work first time, and then reality has other plans. This project taught me to design with backup plans built in from the start: modular sections, the ability to cut a trace and reroute it, and components placed so they could actually be swapped out when (not if) something didn't behave the way the datasheet promised.</p>
+
+
+          <!-- MODULE BADGE -->
+
+          <span class="ic-badge">
+            EEE3088F
+          </span>
+
+
+          <!-- PROJECT TITLE -->
+
+          <h1 style="font-size:1.8rem;">
+            Design Principles &mdash; Power Subsystem PCB
+          </h1>
+
+
+          <!-- ================= INTRODUCTION ================= -->
+
+          <p>
+            A group PCB design project focused on developing the power
+            subsystem for a mobile robot. We designed the subsystem in
+            KiCad while considering power delivery, current requirements,
+            motor control and practical PCB manufacturing constraints.
+          </p>
+
+
+          <!-- ================= PROJECT OVERVIEW ================= -->
+
+          <h2>
+            What was the project?
+          </h2>
+
+          <p>
+            Working as part of a group, we designed the complete power
+            subsystem for a mobile robot, referred to as the &ldquo;MM&rdquo;.
+            The project required us to apply PCB design principles to a
+            real engineering system rather than simply designing an
+            isolated circuit.
+          </p>
+
+          <p>
+            A major consideration was current handling. Higher-current
+            pathways required wider copper traces to safely carry the
+            expected load without excessive heating. This meant using
+            electrical calculations and component specifications to make
+            practical design decisions.
+          </p>
+
+
+          <!-- ================= MY CONTRIBUTION ================= -->
+
+          <h2>
+            My contribution
+          </h2>
+
+          <p>
+            My section of the board focused on the motor system, the
+            ON/OFF switch and external load switching. I worked on a
+            design capable of driving four motors bidirectionally while
+            meeting the power requirements of the robot.
+          </p>
+
+          <p>
+            The subsystem was designed to reduce standby current to below
+            30&nbsp;&micro;A when switched off while still being capable of
+            delivering the robot's required peak current during operation.
+          </p>
+
+
+          <!-- ================= ENGINEERING DECISIONS ================= -->
+
+          <h2>
+            Engineering decisions
+          </h2>
+
+          <p>
+            One of the most important design considerations was ensuring
+            that the PCB could safely handle the expected current. This
+            influenced trace widths, component selection and the physical
+            layout of the board.
+          </p>
+
+          <p>
+            The design also incorporated practical considerations for
+            debugging and modification. Sections were kept modular where
+            possible, with component placement and routing designed to
+            make testing, replacement and potential trace modifications
+            easier.
+          </p>
+
+
+          <!-- ================= DEBUGGING ================= -->
+
+          <h2>
+            Debugging &amp; problem solving
+          </h2>
+
+          <p>
+            One of the biggest lessons from the project came during
+            debugging. A PCB can appear correct in the design software
+            and still behave differently when physically assembled and
+            tested.
+          </p>
+
+          <p>
+            This taught me the importance of designing with troubleshooting
+            in mind from the beginning. Being able to isolate sections,
+            replace components and modify connections made it much easier
+            to identify and address unexpected behaviour.
+          </p>
+
+
+          <!-- ================= SKILLS ================= -->
+
+          <h2>
+            Skills demonstrated
+          </h2>
+
           <div class="project-tools">
-            <span class="chip">KiCad</span>
-            <span class="chip">Power electronics</span>
-            <span class="chip">I&sup2;C &mdash; INA219</span>
-            <span class="chip">Battery charging</span>
-            
+
+            <span class="chip">
+              KiCad
+            </span>
+
+            <span class="chip">
+              PCB Design
+            </span>
+
+            <span class="chip">
+              Power Electronics
+            </span>
+
+            <span class="chip">
+              Motor Control
+            </span>
+
+            <span class="chip">
+              I&sup2;C &mdash; INA219
+            </span>
+
+            <span class="chip">
+              Battery Charging
+            </span>
+
+            <span class="chip">
+              Circuit Debugging
+            </span>
+
+            <span class="chip">
+              Teamwork
+            </span>
+
           </div>
-          <div class="report-slot">&#128206; <a href="files/EEE3088F.pdf" download>Download the full project report (PDF)</a></div>
+
+
+          <!-- ================= PROJECT EVIDENCE ================= -->
+
+          <div
+            class="card"
+            style="margin-top:30px;"
+          >
+
+            <h2>
+              Project evidence
+            </h2>
+
+            <p>
+              The full project report documents the PCB design process,
+              engineering decisions, power subsystem implementation and
+              testing carried out during the project.
+            </p>
+
+            <a
+              class="btn"
+              href="files/EEE3088F.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              View Project Report &rarr;
+            </a>
+
+          </div>
+
+
+          <!-- ================= REFLECTION ================= -->
+
+          <h2 style="margin-top:30px;">
+            What I took from the project
+          </h2>
+
+          <p>
+            This project strengthened my understanding of how electrical
+            requirements translate into physical PCB design. It also
+            showed me that good engineering is not only about making a
+            design work, but about making it practical to test, debug,
+            modify and ultimately manufacture.
+          </p>
+
+          <p>
+            Working as part of a group also gave me experience
+            coordinating different parts of a larger system and
+            understanding how individual subsystems need to work
+            together to achieve the overall design objective.
+          </p>
+
+
         </div>
+
       </article>
+
     </div>
+
   </section>
 
 </main>
 
+
+<!-- ================= FOOTER ================= -->
+
 <footer class="site-footer">
+
   <div class="wrap footer-inner">
-    <p>Imtithaal Manuel &middot; Cape Town, South Africa &middot; imtithaalm.05@gmail.com</p>
+
+    <p>
+      Imtithaal Manuel &middot;
+      Cape Town, South Africa &middot;
+      imtithaalm.05@gmail.com
+    </p>
+
+
     <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="cv.html">Resume/CV</a>
-      <a href="about.html">About Me</a>
-      <a href="experience.html">Experience</a>
-      <a href="https://www.linkedin.com/in/imtithaal-m-58539129a" target="_blank" rel="noopener">LinkedIn</a>
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="projects.html">
+        Projects
+      </a>
+
+      <a href="cv.html">
+        Resume/CV
+      </a>
+
+      <a href="about.html">
+        About Me
+      </a>
+
+      <a href="experience.html">
+        Experience
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/imtithaal-m-58539129a"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn
+      </a>
+
     </div>
+
   </div>
+
 </footer>
+
 
 </body>
 </html>

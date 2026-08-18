@@ -3,71 +3,377 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EEE3094S — Imtithaal Manuel</title>
-<meta name="description" content="Control Engineering &mdash; The Kitticopter — a UCT engineering project by Imtithaal Manuel.">
+
+<title>EEE3094S — Control Engineering — Imtithaal Manuel</title>
+
+<meta name="description" content="Control Engineering — The Kitticopter — a UCT engineering project by Imtithaal Manuel.">
+
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23f6aecd'/%3E%3Ccircle cx='50' cy='50' r='16' fill='%23d6478e'/%3E%3C/svg%3E">
+
 <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
+
 <a class="skip-link" href="#main">Skip to content</a>
 
+
+<!-- ================= HEADER ================= -->
+
 <header class="site-header">
+
   <nav class="nav">
-    <a href="index.html" class="brand"><span class="brand-name">Imtithaal Manuel</span><span class="brand-tagline">My professional portfolio</span></a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></label>
+
+    <a href="index.html" class="brand">
+
+      <span class="brand-name">
+        Imtithaal Manuel
+      </span>
+
+      <span class="brand-tagline">
+        My professional portfolio
+      </span>
+
+    </a>
+
+
+    <input
+      type="checkbox"
+      id="nav-toggle"
+      class="nav-toggle"
+    >
+
+    <label
+      for="nav-toggle"
+      class="hamburger"
+      aria-label="Toggle navigation"
+    >
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </label>
+
+
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html" class="active">Projects</a></li>
-      <li><a href="cv.html">Resume/CV</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="experience.html">Experience</a></li>
+
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="projects.html" class="active">
+          Projects
+        </a>
+      </li>
+
+      <li>
+        <a href="cv.html">
+          Resume/CV
+        </a>
+      </li>
+
+      <li>
+        <a href="about.html">
+          About Me
+        </a>
+      </li>
+
+      <li>
+        <a href="experience.html">
+          Experience
+        </a>
+      </li>
+
     </ul>
+
   </nav>
+
 </header>
+
+
+<!-- ================= MAIN CONTENT ================= -->
 
 <main id="main">
 
   <section style="padding-top:40px;">
+
     <div class="wrap">
-      <a class="detail-back" href="projects.html">&larr; Back to all projects</a>
+
+
+      <!-- BACK BUTTON -->
+
+      <a
+        class="detail-back"
+        href="projects.html"
+      >
+        &larr; Back to all projects
+      </a>
+
+
       <article class="project-detail">
-        <img src="images/controller.jpg" alt="A hand-built analogue lead compensator controller circuit on breadboard-style perfboard">
+
+
+        <!-- ================= PROJECT IMAGE ================= -->
+
+        <img
+          src="images/controller.jpg"
+          alt="A hand-built analogue lead compensator controller circuit on breadboard-style perfboard"
+        >
+
+
         <div class="project-detail-body">
-          <span class="ic-badge">EEE3094S</span>
-          <h1 style="font-size:1.8rem;">Control Engineering &mdash; The Kitticopter</h1>
-          
-          <p>Yes, really &mdash; this lab is themed around <em>Orvillecopter</em>, and the brief is to design a controller that helps a (virtual, thankfully) flying feline track a position input. I started by designing a proportional controller, then evolved it into a lead compensator to meet a tighter set of specifications: steady-state error under 8%, overshoot under 30%, and robustness to &plusmn;10% uncertainty in both the system's aerodynamic constant and the physical components used to build the controller &mdash; all within a 10V supply limit.</p>
-          <p>The build shown here is the physical lead compensator circuit, translating the theoretical design into real analogue hardware.</p>
-        
+
+
+          <!-- MODULE BADGE -->
+
+          <span class="ic-badge">
+            EEE3094S
+          </span>
+
+
+          <!-- PROJECT TITLE -->
+
+          <h1 style="font-size:1.8rem;">
+            Control Engineering &mdash; The Kitticopter
+          </h1>
+
+
+          <!-- ================= INTRODUCTION ================= -->
+
+          <p>
+            A control engineering project focused on designing and building
+            an analogue controller capable of helping a simulated flying
+            system track a position input while meeting specific performance
+            and robustness requirements.
+          </p>
+
+
+          <!-- ================= PROJECT OVERVIEW ================= -->
+
+          <h2>
+            What was the project?
+          </h2>
+
+          <p>
+            The project was themed around <em>Orvillecopter</em> and required
+            the design of a controller for a virtual flying system. The
+            objective was to make the system track a desired position while
+            maintaining acceptable steady-state error, overshoot and
+            robustness.
+          </p>
+
+          <p>
+            The controller had to achieve a steady-state error below 8%,
+            overshoot below 30%, and remain robust to &plusmn;10% uncertainty
+            in both the system's aerodynamic constant and the physical
+            components used to construct the controller. The design also
+            had to operate within a 10V supply limit.
+          </p>
+
+
+          <!-- ================= MY WORK ================= -->
+
+          <h2>
+            What I worked on
+          </h2>
+
+          <p>
+            I began by designing a proportional controller and analysing
+            how it affected the system response. From there, I developed
+            the design into a lead compensator to achieve the required
+            performance specifications.
+          </p>
+
+          <p>
+            I then translated the theoretical controller design into a
+            physical analogue circuit. The circuit shown above is the
+            hand-built lead compensator used to implement the controller
+            in hardware.
+          </p>
+
+
+          <!-- ================= ENGINEERING DECISIONS ================= -->
+
+          <h2>
+            Engineering decisions
+          </h2>
+
+          <p>
+            A key part of the design process was balancing system
+            performance with practical hardware limitations. The
+            controller needed to meet the required error and overshoot
+            specifications while remaining stable and sufficiently
+            robust to variations in both the model and physical
+            components.
+          </p>
+
+          <p>
+            Moving from the theoretical control design to an analogue
+            circuit also required considering real component values,
+            supply limitations and the difference between an ideal
+            mathematical model and a physical implementation.
+          </p>
+
+
+          <!-- ================= SKILLS ================= -->
+
+          <h2>
+            Skills demonstrated
+          </h2>
+
           <div class="project-tools">
-            <span class="chip">Control systems</span>
-            <span class="chip">Lead compensation</span>
-            <span class="chip">Analogue circuit design</span>
-            
+
+            <span class="chip">
+              Control Systems
+            </span>
+
+            <span class="chip">
+              Lead Compensation
+            </span>
+
+            <span class="chip">
+              Analogue Circuit Design
+            </span>
+
+            <span class="chip">
+              System Modelling
+            </span>
+
+            <span class="chip">
+              Controller Design
+            </span>
+
+            <span class="chip">
+              Performance Analysis
+            </span>
+
+            <span class="chip">
+              Circuit Construction
+            </span>
+
+            <span class="chip">
+              Engineering Problem Solving
+            </span>
+
           </div>
-          <div class="report-slot">&#128206; <a href="files/EE3094S.pdf" download>Download the full project report (PDF)</a></div>
+
+
+          <!-- ================= PROJECT EVIDENCE ================= -->
+
+          <div
+            class="card"
+            style="margin-top:30px;"
+          >
+
+            <h2>
+              Project evidence
+            </h2>
+
+            <p>
+              The full project report documents the controller design,
+              analysis, implementation and testing carried out during
+              the project.
+            </p>
+
+            <a
+              class="btn"
+              href="files/EE3094S.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              View Project Report &rarr;
+            </a>
+
+          </div>
+
+
+          <!-- ================= REFLECTION ================= -->
+
+          <h2 style="margin-top:30px;">
+            What I took from the project
+          </h2>
+
+          <p>
+            This project helped me connect control theory with physical
+            engineering. Instead of working only with equations and
+            simulated responses, I had to translate the controller into
+            a real analogue circuit and consider how practical component
+            limitations could affect the system.
+          </p>
+
+          <p>
+            It strengthened my understanding of feedback, controller
+            design and system performance while also showing me the
+            importance of considering robustness when designing a real
+            engineering system.
+          </p>
+
+
         </div>
+
       </article>
+
     </div>
+
   </section>
 
 </main>
 
+
+<!-- ================= FOOTER ================= -->
+
 <footer class="site-footer">
+
   <div class="wrap footer-inner">
-    <p>Imtithaal Manuel &middot; Cape Town, South Africa &middot; imtithaalm.05@gmail.com</p>
+
+    <p>
+      Imtithaal Manuel &middot;
+      Cape Town, South Africa &middot;
+      imtithaalm.05@gmail.com
+    </p>
+
+
     <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="cv.html">Resume/CV</a>
-      <a href="about.html">About Me</a>
-      <a href="experience.html">Experience</a>
-      <a href="https://www.linkedin.com/in/imtithaal-m-58539129a" target="_blank" rel="noopener">LinkedIn</a>
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="projects.html">
+        Projects
+      </a>
+
+      <a href="cv.html">
+        Resume/CV
+      </a>
+
+      <a href="about.html">
+        About Me
+      </a>
+
+      <a href="experience.html">
+        Experience
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/imtithaal-m-58539129a"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn
+      </a>
+
     </div>
+
   </div>
+
 </footer>
+
 
 </body>
 </html>
