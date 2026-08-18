@@ -30,23 +30,39 @@
 <main id="main">
 
   <section class="hero">
+
     <div class="wrap hero-grid">
+
       <div>
-        <span class="eyebrow">Women in Engineering &middot; UCT EEE</span>
+
         <h1>Hi, I'm Imtithaal Manuel<br>&mdash; but everyone calls me Imti.</h1>
+
         <p class="lede">I'm a final-year BSc Eng (Mechatronics, Electrical Engineering) student at the University of Cape Town, and on Wednesdays, I wear pink &#128150;. Circuits, code and occasional chaos &mdash; this is my engineering story.</p>
+
         <div class="btn-row">
+
           <a class="btn" href="projects.html">See my projects</a>
+
           <a class="btn btn-outline" href="files/Imtithaal_Manuel_CV.pdf" download>Download my CV</a>
+
         </div>
+
       </div>
+
       <div>
+
         <div class="hero-photo-frame">
+
           <img src="images/me.png" alt="Imti smiling, wearing a pink outfit">
+
         </div>
+
         <p class="hero-photo-caption">// Wednesdays are for pink (and problem sets)</p>
+
       </div>
+
     </div>
+
   </section>
 
   <div class="wrap"><div class="trace-divider"></div></div>
@@ -69,40 +85,65 @@
 
   <div class="wrap"><div class="trace-divider"></div></div>
 
-  <section>
-    <div class="wrap">
-      <div class="section-head text-center">
-        <span class="eyebrow">Get in touch</span>
-        <h2>Contact Me</h2>
-        <p class="lede" style="margin:0 auto;">Have a question, an opportunity, or just want to say hi? Send me a message below.</p>
-      </div>
-      <form class="contact-form card" action="mailto:imtithaalm.05@gmail.com" method="POST" enctype="text/plain">
-        <div class="form-row">
-          <div class="form-field">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="First Name" required>
-          </div>
-          <div class="form-field">
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="Last Name" required>
-          </div>
-        </div>
-        <div class="form-field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="Email" required>
-        </div>
-        <div class="form-field">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="Subject" required>
-        </div>
-        <div class="form-field">
-          <label for="message">Message</label>
-          <textarea id="message" name="Message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn">Submit</button>
-      </form>
+ ```html
+<section>
+  <div class="wrap">
+    <div class="section-head text-center">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Contact Me</h2>
+      <p class="lede" style="margin:0 auto;">
+        Have a question, an opportunity, or just want to say hi? Send me a message below.
+      </p>
     </div>
-  </section>
+
+    <form class="contact-form card"
+          action="https://api.web3forms.com/submit"
+          method="POST">
+
+      <!-- Web3Forms access key -->
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+
+      <!-- Email settings -->
+      <input type="hidden" name="subject" value="New message from your portfolio">
+      <input type="hidden" name="from_name" value="Portfolio Contact Form">
+
+      <!-- Honeypot spam protection -->
+      <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="First Name" required>
+        </div>
+
+        <div class="form-field">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="Last Name" required>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required>
+      </div>
+
+      <div class="form-field">
+        <label for="subject-input">Subject</label>
+        <input type="text" id="subject-input" name="Subject" required>
+      </div>
+
+      <div class="form-field">
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+
+    </form>
+  </div>
+</section>
+```
+
 
 </main>
 
