@@ -539,3 +539,23 @@ body.resume-page .lede{ font-family:'DM Sans', sans-serif; }
   font-family:'IBM Plex Mono', monospace; font-size:0.78rem; color:var(--ink-soft);
   margin-top:8px; text-align:center;
 }
+
+/* Profile picture in header */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-photo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
