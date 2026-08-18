@@ -1,10 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects — Imtithaal Manuel</title>
-<meta name="description" content="Five UCT engineering course projects, from embedded systems to a Southern Ocean carbon sensor.">
+<meta name="description" content="UCT engineering course projects, from digital circuits and embedded systems to a Southern Ocean carbon sensor.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23f6aecd'/%3E%3Ccircle cx='50' cy='50' r='16' fill='%23d6478e'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 
@@ -14,9 +15,21 @@
 
 <header class="site-header">
   <nav class="nav">
-    <a href="index.html" class="brand"><span class="brand-name">Imtithaal Manuel</span><span class="brand-tagline">My professional portfolio</span></a>
+    <a href="index.html" class="brand">
+      <img src="images/anime.png" alt="Imtithaal Manuel" class="brand-photo">
+      <span class="brand-text">
+        <span class="brand-name">Imtithaal Manuel</span>
+        <span class="brand-tagline">My professional portfolio</span>
+      </span>
+    </a>
+
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></label>
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="projects.html" class="active">Projects</a></li>
@@ -33,7 +46,7 @@
     <div class="wrap">
       <span class="eyebrow">Projects</span>
       <h1>Built, coded, debugged</h1>
-      <p class="lede">Soldering irons, PCB layouts, lines of code and late nights &mdash; tap a project to read the full story.</p>
+      <p class="lede">Soldering irons, PCB layouts, digital circuits, lines of code and late nights &mdash; tap a project to read the full story.</p>
     </div>
   </section>
 
@@ -41,55 +54,72 @@
     <div class="wrap">
       <div class="project-grid">
 
-      <a class="project-card" href="project-eee2046f.html">
-        <img src="images/embedded-stm-board.jpg" alt="STM32F0 development board with LCD screen and LEDs, assembled by hand">
-        <div class="project-card-body">
-          <span class="ic-badge">EEE2046F</span>
-          <h3>Embedded Systems &mdash; STM32F0 Dev Board</h3>
-          <p>Hand-assembling and coding a UCT STM32F0 dev board &mdash; LED sequences, scrolling patterns and a binary counter.</p>
-          <span class="read-more">Read more &rarr;</span>
-        </div>
-      </a>
+        <!-- EEE1006F -->
+        <a class="project-card" href="project-eee1006f.html">
+          <img src="images/circuit.jpg" alt="Water level warning circuit built for the EEE1006F project">
+          <div class="project-card-body">
+            <span class="ic-badge">EEE1006F</span>
+            <h3>Water Level Warning Circuit</h3>
+            <p>Designing and building a digital water level detection and warning circuit using LEDs and a buzzer to indicate tank level and loadshedding conditions.</p>
+            <span class="read-more">Read more &rarr;</span>
+          </div>
+        </a>
 
-      <a class="project-card" href="project-eee3088f.html">
-        <img src="images/pcb-design.jpg" alt="Two custom-designed power subsystem PCBs on a workbench">
-        <div class="project-card-body">
-          <span class="ic-badge">EEE3088F</span>
-          <h3>Design Principles &mdash; Power Subsystem PCB</h3>
-          <p>Designing a KiCad power subsystem PCB for a mobile robot &mdash; motor drive, battery charging and regulated rails.</p>
-          <span class="read-more">Read more &rarr;</span>
-        </div>
-      </a>
+        <!-- EEE2046F -->
+        <a class="project-card" href="project-eee2046f.html">
+          <img src="images/embedded-stm-board.jpg" alt="STM32F0 development board with LCD screen and LEDs, assembled by hand">
+          <div class="project-card-body">
+            <span class="ic-badge">EEE2046F</span>
+            <h3>Embedded Systems &mdash; STM32F0 Dev Board</h3>
+            <p>Hand-assembling and coding a UCT STM32F0 dev board &mdash; LED sequences, scrolling patterns and a binary counter.</p>
+            <span class="read-more">Read more &rarr;</span>
+          </div>
+        </a>
 
-      <a class="project-card" href="project-eee3094s.html">
-        <img src="images/controller.jpg" alt="A hand-built analogue lead compensator controller circuit on breadboard-style perfboard">
-        <div class="project-card-body">
-          <span class="ic-badge">EEE3094S</span>
-          <h3>Control Engineering &mdash; The Kitticopter</h3>
-          <p>Designing a proportional controller, then a lead compensator, to help a virtual flying cat track a position input.</p>
-          <span class="read-more">Read more &rarr;</span>
-        </div>
-      </a>
+        <!-- EEE3088F -->
+        <a class="project-card" href="project-eee3088f.html">
+          <img src="images/pcb-design.jpg" alt="Two custom-designed power subsystem PCBs on a workbench">
+          <div class="project-card-body">
+            <span class="ic-badge">EEE3088F</span>
+            <h3>Design Principles &mdash; Power Subsystem PCB</h3>
+            <p>Designing a KiCad power subsystem PCB for a mobile robot &mdash; motor drive, battery charging and regulated rails.</p>
+            <span class="read-more">Read more &rarr;</span>
+          </div>
+        </a>
 
-      <a class="project-card" href="project-eee3097s.html">
-        <img src="images/micromouse-design.jpg" alt="A small four-wheeled micromouse robot sitting inside a wooden maze">
-        <div class="project-card-body">
-          <span class="ic-badge">EEE3097S</span>
-          <h3>Engineering Design &mdash; Micromouse</h3>
-          <p>Building a micromouse robot that drives a set distance, then autonomously explores a full maze in simulation.</p>
-          <span class="read-more">Read more &rarr;</span>
-        </div>
-      </a>
+        <!-- EEE3094S -->
+        <a class="project-card" href="project-eee3094s.html">
+          <img src="images/controller.jpg" alt="A hand-built analogue lead compensator controller circuit on breadboard-style perfboard">
+          <div class="project-card-body">
+            <span class="ic-badge">EEE3094S</span>
+            <h3>Control Engineering &mdash; The Kitticopter</h3>
+            <p>Designing a proportional controller, then a lead compensator, to help a virtual flying cat track a position input.</p>
+            <span class="read-more">Read more &rarr;</span>
+          </div>
+        </a>
 
-      <a class="project-card" href="project-eee4113f.html">
-        <img src="images/power-subsystem-design.jpg" alt="A pink-and-blue power subsystem circuit built on two perfboards with buck and boost converters">
-        <div class="project-card-body">
-          <span class="ic-badge">EEE4113F</span>
-          <h3>Engineering System Design &mdash; Southern Ocean Carbon Sensor</h3>
-          <p>Leading the power subsystem for a group-built autonomous sediment trap, designed for a UCT Oceanography researcher.</p>
-          <span class="read-more">Read more &rarr;</span>
-        </div>
-      </a>
+        <!-- EEE3097S -->
+        <a class="project-card" href="project-eee3097s.html">
+          <img src="images/micromouse-design.jpg" alt="A small four-wheeled micromouse robot sitting inside a wooden maze">
+          <div class="project-card-body">
+            <span class="ic-badge">EEE3097S</span>
+            <h3>Engineering Design &mdash; Micromouse</h3>
+            <p>Building a micromouse robot that drives a set distance, then autonomously explores a full maze in simulation.</p>
+            <span class="read-more">Read more &rarr;</span>
+          </div>
+        </a>
+
+        <!-- EEE4113F -->
+        <a class="project-card" href="project-eee4113f.html">
+          <img src="images/power-subsystem-design.jpg" alt="A pink-and-blue power subsystem circuit built on two perfboards with buck and boost converters">
+          <div class="project-card-body">
+            <span class="ic-badge">EEE4113F</span>
+            <h3>Engineering System Design &mdash; Southern Ocean Carbon Sensor</h3>
+            <p>Leading the power subsystem for a group-built autonomous sediment trap, designed for a UCT Oceanography researcher.</p>
+            <span class="read-more">Read more &rarr;</span>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
@@ -112,3 +142,4 @@
 
 </body>
 </html>
+```

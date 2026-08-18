@@ -1,0 +1,109 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EEE1006F — Water Level Warning Circuit — Imtithaal Manuel</title>
+<meta name="description" content="EEE1006F Water Level Warning Circuit — a digital circuit project by Imtithaal Manuel at UCT.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23f6aecd'/%3E%3Ccircle cx='50' cy='50' r='16' fill='%23d6478e'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <img src="images/anime.png" alt="Imtithaal Manuel" class="brand-photo">
+      <span class="brand-text">
+        <span class="brand-name">Imtithaal Manuel</span>
+        <span class="brand-tagline">My professional portfolio</span>
+      </span>
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="cv.html">Resume/CV</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="experience.html">Experience</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section style="padding-top:40px;">
+    <div class="wrap">
+      <a class="detail-back" href="projects.html">&larr; Back to all projects</a>
+
+      <article class="project-detail">
+
+        <img src="images/circuit.jpg" alt="Water level warning circuit built for the EEE1006F project">
+
+        <div class="project-detail-body">
+
+          <span class="ic-badge">EEE1006F</span>
+
+          <h1 style="font-size:1.8rem;">Water Level Warning Circuit</h1>
+
+          <p>
+            This EEE1006F project focused on designing and building a Water Level Detection System (WLDS) that could indicate the level of water in a tank and provide appropriate warnings under different loadshedding conditions.
+          </p>
+
+          <p>
+            The first part of the design was a digital circuit that produced three water-level outputs: HIGH when the tank was full, MED when it was half full, and LOW when the tank was empty. The second part used these conditions to create a warning system using LEDs and a buzzer.
+          </p>
+
+          <p>
+            The warning circuit had to distinguish between normal operation and loadshedding. Depending on the combination of water level and power condition, the circuit would illuminate either a green or red LED and produce different buzzer behaviour. This created six possible warning states, ranging from a green LED for a full tank with no loadshedding to a red LED with a beeping buzzer when the tank was empty during loadshedding.
+          </p>
+
+          <p>
+            An important part of the project was making realistic engineering assumptions. The brief allowed the water level to be represented using a variable resistor and loadshedding to be simulated using an LDR. The design also had to remain practical, use standard components where possible, stay within the R50 additional-component budget, and operate without programmable devices such as an Arduino or Raspberry Pi.
+          </p>
+
+          <div class="project-tools">
+            <span class="chip">Digital Circuits</span>
+            <span class="chip">Logic Gates</span>
+            <span class="chip">LEDs</span>
+            <span class="chip">Buzzer</span>
+            <span class="chip">Circuit Construction</span>
+            <span class="chip">Soldering</span>
+          </div>
+
+        </div>
+
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>Imtithaal Manuel &middot; Cape Town, South Africa &middot; imtithaalm.05@gmail.com</p>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="cv.html">Resume/CV</a>
+      <a href="about.html">About Me</a>
+      <a href="experience.html">Experience</a>
+      <a href="https://www.linkedin.com/in/imtithaal-m-58539129a" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+```
