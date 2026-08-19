@@ -214,7 +214,7 @@ a:focus-visible, button:focus-visible, .chip:focus-visible{
 /* ---------- Divider ---------- */
 .trace-divider{
   width:100%; height:0; margin:24px 0;
-  border-top:3px dotted var(--pink-primary);
+  border-top:3px double var(--pink-primary);
 }
 
 /* ---------- Sections ---------- */
